@@ -4425,7 +4425,7 @@ input[type="button"].btn-block {
   width: 100%;
   border-top-left-radius: calc(0.5rem - 0.125rem);
   border-top-right-radius: calc(0.5rem - 0.125rem);
-  height: 15vw;
+  height: 35vh;
   object-fit: cover;
 }
 
