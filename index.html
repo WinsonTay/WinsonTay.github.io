@@ -16,7 +16,7 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
   <!-- Theme CSS -->
-  <link href="css/freelancer.min.css" rel="stylesheet">
+  <link href="css/freelancer.css" rel="stylesheet">
   <link href="css/custom.css" rel="stylesheet">
 
 </head>
@@ -79,7 +79,7 @@
     <div class = "container">
       <h2 class="page-section-heading text-center text-uppercase text-secondary mb-3">WHAT I DO<hr></h2>
       <div class="row justify-items-baseline">
-        <div class="col-md-6 col-lg-8">
+        <div class="col-md-6 col-lg-12">
           <!-- Carousel Section -->
           <div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel">
             <div class="carousel-inner">
@@ -107,16 +107,17 @@
           </div>
           <!-- End of Carousel -->
         </div>
-        <div class = "col-md-6 col-lg-4 text-center">
-            <h6>A SOFTWARE PROGRAMMER WHO HAD IMPLEMENTED AUTOMATION SOLUTION THROUGH VARIOUS INDUSTRY </h6>
-            <p>
-              <ul class = "p-2" style ="list-style-type:none">
-                <li class = "skill-item border mb-1 p-3">Developed Program Robotis Application in Food % Semicond. Industry which lead to increased manufacturing throughput and consistency </li>
-                <li class ="skill-item border mb-1 p-3">Implemented automation solution on Customized Machine and Process Automation through PLC programming (INDUSTRY DIGITAL COMPUTER) </li>
-                <li class ="skill-item border mb-1 p-3">Designed and Developed Human-Machine Software Interface for operator to control their machine and generate reports </li>
-              </ul>
-            </p>
-        </div>  
+        <div class = "col-md-6 col-lg-12">
+            <h6 class = "mt-2 align-self-center">A SOFTWARE PROGRAMMER WHO HAD IMPLEMENTED AUTOMATION SOLUTION THROUGH VARIOUS INDUSTRY </h6>
+            <div class ="d-flex flex-row skills-list">
+              <p>
+                 <div class = "skill-item">Developed Program for Robotis Application in Food & Semicond. Industry which lead to increased manufacturing throughput and consistency </div>
+                 <div class = "skill-item">Implemented automation solution on Customized Machine and Process Automation through PLC programming (INDUSTRY DIGITAL COMPUTER) </div>
+                 <div class = "skill-item">Designed and Developed Human-Machine Software Interface for operator to control their machine and generate reports </li>
+                </ul>
+              </p>
+            </div>
+          </div>  
       </div>
     </div>  
     <!-- Container -->
@@ -144,78 +145,54 @@
         <!-- Portfolio Item 1 -->
         <div class="col-md-6 col-lg-4">
           <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-plus fa-3x"></i>
+            <div class="card project-card" style="width:100%;">
+              <img class="card-img-top" src="./img/projects/water_relevation.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Robotic Palletizing</h5>
+                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/cabin.png" alt="">
           </div>
         </div>
 
         <!-- Portfolio Item 2 -->
         <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-plus fa-3x"></i>
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+            <div class="card project-card" style="width:100%;">
+              <img class="card-img-top" src="./img/projects/water_relevation.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Automated Spraying Process</h5>
+                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/cake.png" alt="">
           </div>
         </div>
-
-        <!-- Portfolio Item 3 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-plus fa-3x"></i>
+          <!-- Portfolio Item 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+              <div class="card project-card" style="width:100%;">
+                <img class="card-img-top" src="./img/projects/mamee.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h6 class="card-title">HIGH SPEED ROBOTIC PICK & PLACE</h6>
+                  <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                </div>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/circus.png" alt="">
           </div>
-        </div>
-
-        <!-- Portfolio Item 4 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-plus fa-3x"></i>
+            <!-- Portfolio Item 4 -->
+            <div class="col-md-6 col-lg-">
+              <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                <div class="card project-card" style="width:100%;">
+                  <img class="card-img-top" src="./img/projects/water_relevation.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">AUTOMATED SPRAYING PROCESS</h5>
+                    <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                  </div>
+                </div>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/game.png" alt="">
-          </div>
-        </div>
-
-        <!-- Portfolio Item 5 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/safe.png" alt="">
-          </div>
-        </div>
-
-        <!-- Portfolio Item 6 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/submarine.png" alt="">
-          </div>
-        </div>
-
-      </div>
-      <!-- /.row -->
-
+        
+    <!-- /.row -->
     </div>
   </section>
 
