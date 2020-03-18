@@ -67,13 +67,14 @@
 }
 
 .tech-app li{
-    display:inline;
+    display:inline-block;
     margin:2px;
     border:2px solid black;
+    margin-bottom: 5px;
     padding:5px;
     background-color: rgba(11, 66, 218, 0.603);
     font-size: medium;
 }
 .tech-app{
-    padding-inline-start: 0px !important;
+    padding-inline-start: 0px !important;   
 }
