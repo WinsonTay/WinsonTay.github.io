@@ -1,7 +1,24 @@
-/* #hearts{
+.skill-item:hover{
+    box-shadow: 0 18px 32px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .project-card img{
+    opacity:0.25;
+    transition:0.5s;    
+  }
+  
+  .project-card img:hover{
+    opacity:1;
+    transition:0.5s;
+  }
+  
+  .project-card{
+    color:black;
+  }
+  #hearts{
     font-size:120%;
-}
-.skill-item{
+  }
+  .skill-item{
     background-color: rgba(99, 99, 99,0.8);
     color: whitesmoke;
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
@@ -10,26 +27,53 @@
     padding:18px;
     margin:10px; 
     font-size:15px;
-}
-.skill-item:hover{
-    box-shadow: 0 18px 32px 0 rgba(0, 0, 0, 0.2);
-}
-
-.project-card img{
-    opacity:0.25;
-    transition:0.5s;    
-}
-
-.project-card img:hover{
-    opacity:1;
-    transition:0.5s;
-} */
-
+  }
+  
+  .img-container{
+    overflow-x: auto;
+  }
+  .img-container img{
+    margin-right:15px;
+  }
+  
+  .img-container img{
+    display: block;
+    max-width:550px;
+    max-height:405px;
+    width: auto;
+    height: auto;
+  }
+  
 .bootcamp-icons{
-    transition:0.15s;  /* Animations */
+    transition:0.4s;  /* Animations */
     transform: scale(1.4);
     margin:15px;
 }
 .bootcamp-icons:hover{
     transform: scale(2.0);
+}
+
+.bootcamp-text{
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.nextacademy-logo{
+    background-color: rgba(11, 66, 218, 0.603);
+    border-radius: 10px;
+    padding:3px;
+    color:white;
+    font-size: small
+}
+
+.tech-app li{
+    display:inline;
+    margin:2px;
+    border:2px solid black;
+    padding:5px;
+    background-color: rgba(11, 66, 218, 0.603);
+    font-size: medium;
+}
+.tech-app{
+    padding-inline-start: 0px !important;
 }
