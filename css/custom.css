@@ -1,4 +1,4 @@
-#hearts{
+/* #hearts{
     font-size:120%;
 }
 .skill-item{
@@ -23,5 +23,13 @@
 .project-card img:hover{
     opacity:1;
     transition:0.5s;
-}
+} */
 
+.bootcamp-icons{
+    transition:0.15s;  /* Animations */
+    transform: scale(1.4);
+    margin:15px;
+}
+.bootcamp-icons:hover{
+    transform: scale(2.0);
+}
