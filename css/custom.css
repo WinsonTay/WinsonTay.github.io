@@ -1,7 +1,6 @@
 .skill-item:hover{
     box-shadow: 0 18px 32px 0 rgba(0, 0, 0, 0.2);
   }
-  
   .project-card img{
     opacity:0.25;
     transition:0.5s;    
@@ -66,6 +65,20 @@
     font-size: small
 }
 
+.industry-target li{
+  display:inline-block;
+    margin:2px;
+    border:2px solid black;
+    margin-bottom: 5px;
+    padding:5px;
+    background-color: black;
+    font-size: medium;
+    color:white;
+}
+.industry-target{
+  padding-inline-start:0px !important;
+}
+
 .tech-app li{
     display:inline-block;
     margin:2px;
@@ -77,4 +90,22 @@
 }
 .tech-app{
     padding-inline-start: 0px !important;   
+}
+
+.nav-download{
+  border:2px solid lightblue;
+  font-size:smaller;
+}
+.nav-download:hover{
+  background-color: lightblue;
+}
+#myVideo{
+  min-width: 60%;
+  min-height: 100%;
+  width:100%;
+  opacity:0.5;
+}
+.video-play{
+  margin-left:auto;
+  margin-right:auto;
 }

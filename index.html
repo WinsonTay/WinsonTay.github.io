@@ -34,13 +34,16 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-2 px-0 px-lg-2 rounded text-center nav-download" href="#">DOWNLOAD <br>RESUME</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#skills">SKILLS</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">PROJECTS</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">BOOTCAMP</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a>
@@ -76,16 +79,19 @@
   </header>
 
   <!-- Skill Section -->
-  <section class = "page-section skills" id ="skills">
+  <section class = "page-section pb-1 skills" id ="skills">
     <div class = "container">
       <h2 class="page-section-heading text-center text-uppercase text-secondary mb-3">WHAT I DO<hr></h2>
-      <div class="row justify-items-baseline">
-        <div class="col-md-12 col-lg-12">
+      <div class="row justify-contents-center">
+        <div class="col-md-8 col-lg-10 col-xl-12 my-auto video-play">
+            <video class = "rounded" autoplay muted loop id="myVideo">
+              <source src="./img/video.mp4" type="video/mp4">
+            </video>
           <!-- Carousel Section -->
-          <div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel">
+          <!-- <div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img class="d-block w-100" src="./img/first_slide.svg" alt="First slide">
+                 
                 <div class ="carousel-caption">
                     <p>Test</p>
                 </div>
@@ -105,12 +111,12 @@
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="sr-only">Next</span>
             </a>
-          </div>
+          </div> -->
           <!-- End of Carousel -->
         </div>
-        <div class = "col-lg-12">
-            <h6 class = "mt-2 align-self-center">A SOFTWARE PROGRAMMER WHO HAD IMPLEMENTED AUTOMATION SOLUTION THROUGH VARIOUS INDUSTRY </h6>
-            <div class ="d-lg-flex flex-lg-row skills-list">
+        <div class = "col-lg-12 rounded bg-dark">
+            <h5 class = "text-light text-center mt-2">A SOFTWARE PROGRAMMER WHO HAD IMPLEMENTED <br>AUTOMATION SOLUTION THROUGH VARIOUS INDUSTRY </h5>
+            <div class ="d-lg-flex flex-lg-row skills-list mb-5">
               <p>
                  <div class = "skill-item">Developed Program for Robotis Application in Food & Semicond. Industry which lead to increased manufacturing throughput and consistency </div>
                  <div class = "skill-item">Implemented automation solution on Customized Machine and Process Automation through PLC programming (INDUSTRY DIGITAL COMPUTER) </div>
@@ -161,7 +167,7 @@
             <div class="card project-card" style="width:100%;">
               <img class="card-img-top" src="./img/projects/spray_booth.jpg" alt="Card image cap">
               <div class="card-body">
-                <h5 class="card-title">Automated Spraying Process</h5>
+                <h5 class="card-title">Process Automation</h5>
                 <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
               </div>
             </div>
@@ -205,6 +211,7 @@
             <img class ="bootcamp-icons" src = "./img/icon/icon-amazon.png"/>
             <img class ="bootcamp-icons" src = "./img/icon/icon-visualstudio.png"/>
             <img class ="bootcamp-icons" heigh="40" width = "40" src = "./img/icon/icon-flask.png"/>
+            <img class ="bootcamp-icons" src = "./img/icon/icons8-git.png"/>
           </p>
         </div>
         <div class="col-lg-6 mr-auto">
@@ -223,7 +230,7 @@
         <div class ="col-lg-12">
           <div class="card project-card" style="width:100%;">
             <div class="card-body">
-              <h5 class="card-title"> "CRUD" APPLICATION WITH INSTAGRAM-CLONE</h5>
+              <h5 class="card-title"> "CRUD" WEB APPLICATION WITH INSTAGRAM-CLONE</h5>
               <p class ="card-text">
                 <ul class ="tech-app">
                   <li>PYTHON</li>
@@ -234,36 +241,34 @@
                   <li>POSTGRES SQL</li>
                 </ul>
               </p>
-              <p class ="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus repudiandae voluptas nihil ex, dicta amet inventore minus quia nostrum dignissimos laboriosam velit nam, pariatur deleniti unde, dolorum impedit illo atque.</p>
-              <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+              <p class ="card-text">We were assign to develop an instagram-clone web apps using RESTful API during the bootcamp.
+                The expected function for this web app are Login/Sign Up User interface and storing user info in the Postgres database.
+                User can login with Google account too using OAUTH. Then user can post a story with images which is store in the AWS S3 cloud storage, 
+                following other user , and having follower.Moreover, user can donate amount of money to other user images using "Braintree" payment gateway API. 
+                The web app was developed using Python(Framework: Flask) since it is a 
+                popular programming language nowadays and beginner friendly.
+                Finally, the web apps server was deployed in heroku cloud application platform. 
+              </p>
+              <!-- <p class="card-text">Some quick example text to build on the card title and make` up the bulk of the card's content.</p> -->
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-
-  <!-- Contact Section -->
+<!--
+  Conntact Section 
   <section class="page-section" id="contact">
     <div class="container">
 
-      <!-- Contact Section Heading -->
+      Contact Section Heading 
       <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
 
-      <!-- Icon Divider -->
-      <div class="divider-custom">
-        <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon">
-          <i class="fas fa-star"></i>
-        </div>
-        <div class="divider-custom-line"></div>
-      </div>
-
-      <!-- Contact Section Form -->
+ 
+       Contact Section Form 
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-          <form name="sentMessage" id="contactForm" novalidate="novalidate">
+          To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. 
             <div class="control-group">
               <div class="form-group floating-label-form-group controls mb-0 pb-2">
                 <label>Name</label>
@@ -303,7 +308,7 @@
 
     </div>
   </section>
-
+ -->
   <!-- Footer -->
   <footer class="footer text-center">
     <div class="container">
@@ -382,10 +387,29 @@
                   <img class="img-fluid rounded mb-4 project-img" height="400" width="350" src="img/projects/mdd.jpg" alt="">
                   <img class="img-fluid rounded mb-4 project-img" width="100" height="100" src="img/projects/confoil.jpg" alt="">
                   <img class="img-fluid rounded mb-4 project-img" width="100" height="100" src="img/projects/uj.jpg" alt="">
-                </div>  
-                  
-                
-                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                </div>
+                  <div class="modal-content text-left">  
+                  <h3>DESCRIPTION</h3>
+                  <p>
+                    Palletizing refers to a simple operation of loading an object such as heavy carton on a pallet in a defined pattern.
+                    But as when the weight of the carton is heavier , this requires a lot of man power to finish the job and raises the safety concern 
+                    of the operator which might causes fatigue and hurting the lower back of that person.
+                  </p>
+                  <p>
+                    There are many types of palletizing machine, and robotics palletizing is one of them.
+                  </p>
+                  <h3>INDUSTRY</h3>
+                  <ul class ="industry-target">
+                    <li>FOOD & BEVERAGE INDUSTRY</li>
+                    <li>MANUFACTURING</li>
+                  </ul>
+                  <h3>MY RESPONSIBILITY</h3>
+                  <ul>
+                    <li>Develop the program which control the robots movement and logic correctly.</li>
+                    <li>Implement the logic for handshaking with other machine </li>
+                    <li>Robot Motion fine tuning to get the fastest cycle time </li>
+                  </ul>
+                </div>
                 <button class="btn btn-primary" href="#" data-dismiss="modal">
                   <i class="fas fa-times fa-fw"></i>
                   Close Window
@@ -412,19 +436,38 @@
             <div class="row justify-content-center">
               <div class="col-lg-9">
                 <!-- Portfolio Modal - Title -->
-                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-3">Automotive Spraying Process</h2>
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-3">Process Automation</h2>
                 <!-- Portfolio Modal - Image -->
                 <div class="d-flex img-container">
                   <img class="img-fluid rounded mb-4 project-img" height="400" width="350" src="img/projects/spray_booth2.jpg" alt="">
                   <img class="img-fluid rounded mb-4 project-img" width="100" height="100" src="img/projects/oven.jpg" alt="">
                   <img class="img-fluid rounded mb-4 project-img" width="400" height="350" src="img/projects/airbus.jpg" alt="">
-                </div>  
-                
-                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                <button class="btn btn-primary" href="#" data-dismiss="modal">
-                  <i class="fas fa-times fa-fw"></i>
-                  Close Window
-                </button>
+                </div> 
+                  <div class="modal-content text-left">
+                    <h3>DESCRIPTION</h3>
+                      <p>
+                        In every 
+                      </p>
+                      <h3>INDUSTRY</h3>
+                      <ul class ="industry-target">
+                        <li>AUTOMOTIVE</li>
+                        <li>PALM OIL MILL</li>
+                        <li>MANUFACTURING</li>
+                        <li>OIL & GAS</li>
+                        <li>CHEMICAL</li>
+                        <li>WATER TREATMENT</li>
+                      </ul>
+                      <h3>MY RESPONSIBILITY</h3>
+                      <ul>
+                        <li>Develop the program which control the robots movement and logic correctly.</li>
+                        <li>Implement the logic for handshaking with other machine </li>
+                        <li>Robot Motion fine tuning to get the fastest cycle time </li>
+                      </ul>
+                    <button class="btn btn-primary" href="#" data-dismiss="modal">
+                      <i class="fas fa-times fa-fw"></i>
+                      Close Window
+                    </button>
+                  </div>  
               </div>
             </div>
           </div>
@@ -445,63 +488,32 @@
           <div class="container">
             <div class="row justify-content-center">
               <div class="col-lg-8">
-                <!-- Portfolio Modal - Title -->
-                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Circus Tent</h2>
-                <!-- Icon Divider -->
-                <div class="divider-custom">
-                  <div class="divider-custom-line"></div>
-                  <div class="divider-custom-icon">
-                    <i class="fas fa-star"></i>
-                  </div>
-                  <div class="divider-custom-line"></div>
-                </div>
-                <!-- Portfolio Modal - Image -->
-                <img class="img-fluid rounded mb-5" src="img/portfolio/circus.png" alt="">
-                <!-- Portfolio Modal - Text -->
-                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                <button class="btn btn-primary" href="#" data-dismiss="modal">
-                  <i class="fas fa-times fa-fw"></i>
-                  Close Window
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Portfolio Modal 4 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-labelledby="portfolioModal4Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">
-            <i class="fas fa-times"></i>
-          </span>
-        </button>
-        <div class="modal-body text-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <!-- Portfolio Modal - Title -->
-                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Controller</h2>
-                <!-- Icon Divider -->
-                <div class="divider-custom">
-                  <div class="divider-custom-line"></div>
-                  <div class="divider-custom-icon">
-                    <i class="fas fa-star"></i>
-                  </div>
-                  <div class="divider-custom-line"></div>
-                </div>
-                <!-- Portfolio Modal - Image -->
-                <img class="img-fluid rounded mb-5" src="img/portfolio/game.png" alt="">
-                <!-- Portfolio Modal - Text -->
-                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                <button class="btn btn-primary" href="#" data-dismiss="modal">
-                  <i class="fas fa-times fa-fw"></i>
-                  Close Window
-                </button>
+                <div class="modal-content text-left">
+                  <h3>DESCRIPTION</h3>
+                    <p>
+                      Palletizing refers to a simple operation of loading an object such as heavy carton on a pallet in a defined pattern.
+                      But as when the weight of the carton is heavier , this requires a lot of man power to finish the job and raises the safety concern 
+                      of the operator which might causes fatigue and hurting the lower back of that person.
+                    </p>
+                    <p>
+                      There are many types of palletizing machine, and robotics palletizing is one of them.
+                    </p>
+                    <h3>INDUSTRY</h3>
+                    <ul class ="industry-target">
+                      <li>FOOD & BEVERAGE INDUSTRY</li>
+                      <li>MANUFACTURING</li>
+                    </ul>
+                    <h3>MY RESPONSIBILITY</h3>
+                    <ul>
+                      <li>Develop the program which control the robots movement and logic correctly.</li>
+                      <li>Implement the logic for handshaking with other machine </li>
+                      <li>Robot Motion fine tuning to get the fastest cycle time </li>
+                    </ul>
+                    <button class="btn btn-primary" href="#" data-dismiss="modal">
+                      <i class="fas fa-times fa-fw"></i>
+                      Close Window
+                    </button>
+                </div>   
               </div>
             </div>
           </div>
@@ -606,7 +618,7 @@
 
   <script>
     AOS.init({
-      duration: 1500,
+      duration: 1000,
     });
   </script>
 
