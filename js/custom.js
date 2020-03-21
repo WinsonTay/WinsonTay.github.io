@@ -1,6 +1,7 @@
 card = document.querySelectorAll('.project-card');
-var cnt =0;
+var cnt=1;
 
+card[0].classList.add("show-card");
 // for(var i=0; i< card.length; i++){       
 //     card[i].onmouseover= function(){
 //         this.classList.add("test");
@@ -27,7 +28,7 @@ setInterval(function(){
       cnt = 0;
     }  
 
-}, 2000);
+}, 2500);
 
 
 // card.onmouseout = function(){
