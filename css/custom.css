@@ -23,7 +23,11 @@
     transition:0.5s;    
   }
   
-  .project-card img:hover{
+  .project-card  img:hover{
+    opacity:1;
+    transition:0.5s;
+  }
+  .show-card img{
     opacity:1;
     transition:0.5s;
   }
@@ -55,6 +59,7 @@
     margin-right:15px;
   }
   
+
   .img-container img{
     display: block;
     max-width:550px;
@@ -131,4 +136,8 @@
 .video-play{
   margin-left:auto;
   margin-right:auto;
+}
+
+.test{
+  color:white !important;
 }
