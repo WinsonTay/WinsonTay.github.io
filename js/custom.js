@@ -28,7 +28,7 @@ setInterval(function(){
       cnt = 0;
     }  
 
-}, 2500);
+}, 3000);
 
 
 // card.onmouseout = function(){
