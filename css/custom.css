@@ -141,3 +141,6 @@
 .test{
   color:white !important;
 }
+.portfolio-modal {
+  max-height:85vh !important;
+}
